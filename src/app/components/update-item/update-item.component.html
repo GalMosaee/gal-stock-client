@@ -1,0 +1,11 @@
+<h3>Update Item</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Amount</label>
+      <input type="number" class="form-control" id="amount" required [(ngModel)]="amount" name="amount">
+      <p>Please use positive number to add and negative number to remove.</p>
+    </div>
+    <button (click)="updateItem()" type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
